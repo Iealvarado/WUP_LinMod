@@ -90,6 +90,7 @@ plot(SIMS~ARM,data=data)
 abline(model.1,col= "green")
 ```
 
+This is a scatter plot with function on it, at ARM strength 88 the 95 percent confidence interval is between 0.49 and 0.92
 
 ## Model 2 SIM~GRIP
 
