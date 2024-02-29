@@ -52,6 +52,11 @@ we have numerical responses(sim score) and numerical explanatory variable (arm a
 
 ### scatterplot
 
+```{r}
+plot(SIMS~ARM,data=data)
+```
+
+There is positive relationship between SIMS and ARMS. If this were a perfect linear relationship, all the points would be on a straight line. the correlation between SIMS and ARMS strength is 0 
 
 ### Numerical results
 
