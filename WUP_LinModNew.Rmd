@@ -77,7 +77,7 @@ the P-value for coefficient of ARM 0.00000000000000022
 #### Predict at target point
 
 ```{r}
-SIMSpredict = predict.lm(model.1,newdata = data.frame (ARM = 88,GRIP = 94))
+SIMSpredict = predict.lm(model.1,newdata = data.frame (ARM = 88,GRIP = 94), interval = "confidence")
 print(SIMSpredict)
 ```
 
@@ -85,6 +85,11 @@ The prediction for ARM = 88, and GRIP = 94 is .71
 
 #### scatterplot with model fit
   
+```{r}
+plot(SIMS~ARM,data=data)
+abline(model.1,col= "green")
+```
+
 
 ## Model 2 SIM~GRIP
 
