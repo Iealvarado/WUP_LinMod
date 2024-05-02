@@ -96,18 +96,42 @@ This is a scatter plot with function on it, at ARM strength 88 the 95 percent co
 
 ### Now add in scatterplot
 
+```{r}
+plot(SIMS~GRIP,data=data)
+```
+
+There is positive relationship between SIMS and GRIP. If this were a perfect linear relationship, all the points would be on a straight line. the correlation between SIMS and GRIP strength is 0
+
+
 
 ### Numerical results 
+
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+
+This summarizes the correlation between GRIP strength and SIMS score being 0.6398458
+
 
 
 ### Inferential  (Build model.2)
   
+```{r}
+model.1 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.1)
+```
+
+the P-value for coefficient of ARM 0.00000000000000022
+
 
 #### predict model.2 at target point
 
 #### now add the model fit to our plot for model.2
   
-
+```{r}
+plot(GRIP~,data=data)
+```
 
 ## Model 3 SIM~ARM+GRIP
 
